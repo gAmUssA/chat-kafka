@@ -21,7 +21,7 @@ dependencies {
     implementation("org.webjars:bootstrap:4.5.3")
     implementation("org.jetbrains.kotlinx:kotlinx-html-jvm:0.7.3")
 
-    testImplementation("org.testcontainers:kafka:1.16.2")
+    testImplementation("org.testcontainers:kafka:1.17.4")
 
     developmentOnly("org.springframework.boot:spring-boot-devtools")
 }
