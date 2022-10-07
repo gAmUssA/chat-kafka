@@ -1,0 +1,15 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: chat-kafka
+spec:
+  template:
+#    metadata:
+#      annotations:
+#        konghq.com/plugins: add-response-header
+    spec:
+      containers:
+        - image: gamussa/chat-kafka
+          env:
+            - name: KAFKA_BOOTSTRAP_SERVERS
+              value: my-cluster-kafka-bootstrap.kafka:9092
